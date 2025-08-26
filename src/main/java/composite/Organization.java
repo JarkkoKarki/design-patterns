@@ -17,5 +17,5 @@ public abstract class Organization {
 
     public abstract String toXML(int indentLevel);
 
-    public abstract int getTotalSalary(); // New method to calculate total salary
+    public abstract int getTotalSalary();
 }
