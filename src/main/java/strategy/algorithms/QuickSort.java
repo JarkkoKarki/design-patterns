@@ -17,16 +17,14 @@ public class QuickSort implements SortStrategy {
 
     static int partition(int[] arr, int low, int high) {
 
-        // choose the pivot
+        // viimeinen elementti pivot
         int pivot = arr[high];
 
-        // index of smaller element and indicates
-        // the right position of pivot found so far
+        // indeksi pienemminnän elementin vasemmalle puolelle
         int i = low - 1;
 
-        // traverse arr[low..high] and move all smaller
-        // elements to the left side. Elements from low to
-        // i are smaller after every iteration
+
+        // käydään elementit läpi ja jos elementti on pienempi kuin pivot vaihdetaan paikat
         for (int j = low; j <= high - 1; j++) {
             if (arr[j] < pivot) {
                 i++;
@@ -34,8 +32,8 @@ public class QuickSort implements SortStrategy {
             }
         }
 
-        // Move pivot after smaller elements and
-        // return its position
+        // vaihdetaan pivot oikealle paikalleen
+        //pivotin toinen puoli on suurempi ja toinen pienempi kuin pivot
         swap(arr, i + 1, high);
         return i + 1;
     }
@@ -51,11 +49,11 @@ public class QuickSort implements SortStrategy {
     static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
 
-            // pi is the partition return index of pivot
+            // palautetaan pivot
             int pi = partition(arr, low, high);
 
-            // recursion calls for smaller elements
-            // and greater or equals elements
+
+            // Järjestetään pivotin vasen ja oikea puoli
             quickSort(arr, low, pi - 1);
             quickSort(arr, pi + 1, high);
         }

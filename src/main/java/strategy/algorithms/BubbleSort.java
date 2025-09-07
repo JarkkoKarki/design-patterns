@@ -14,9 +14,10 @@ public class BubbleSort implements SortStrategy {
             swapped = false;
             for (j = 0; j < n - i - 1; j++) {
                 if (arr[j] > arr[j + 1]) {
-                    // Swap arr[j] and arr[j+1]
+                    // Siirretään pienempi luku vasemmalle ja suurempi luku -> temp
                     temp = arr[j];
                     arr[j] = arr[j + 1];
+                    // temp siirretään pienemmän luvun oikealle
                     arr[j + 1] = temp;
                     swapped = true;
                 }
