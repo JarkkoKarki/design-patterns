@@ -51,6 +51,9 @@ This project demonstrates the use of various design patterns in Java.
 
 [Proxy](https://github.com/JarkkoKarki/design-patterns/tree/master/src/main/java/proxy)
 
+<img src="https://github.com/JarkkoKarki/design-patterns/blob/master/UML/proxy_UML.png" alt="UI Preview" width="500" height="400"></img>
+
+
 ## visitor
 
 [Visitor](https://github.com/JarkkoKarki/design-patterns/tree/master/src/main/java/visitor)
