@@ -1,6 +1,4 @@
-# Design Patterns Project
-
-This project demonstrates the use of various design patterns in Java.
+# Design Patterns
 
 ## factory_method
 [Factory Method](https://github.com/JarkkoKarki/design-patterns/tree/master/src/main/java/factory_method)
@@ -65,3 +63,4 @@ This project demonstrates the use of various design patterns in Java.
 ## adapter
 
 [Adapter](URL)
+
