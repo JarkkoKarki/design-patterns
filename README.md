@@ -3,8 +3,6 @@
 ## factory_method
 [Factory Method](https://github.com/JarkkoKarki/design-patterns/tree/master/src/main/java/factory_method)
 
-<img src="https://github.com/JarkkoKarki/design-patterns/blob/master/UML/factory_method_UML.png" alt="UI Preview" width="500" height="400"></img>
-
 ## abstract_factory
 
 [Abstract Factory](https://github.com/JarkkoKarki/design-patterns/tree/master/src/main/java/abstract_factory)
@@ -49,9 +47,6 @@
 
 [Proxy](https://github.com/JarkkoKarki/design-patterns/tree/master/src/main/java/proxy)
 
-<img src="https://github.com/JarkkoKarki/design-patterns/blob/master/UML/proxy_UML.png" alt="UI Preview" width="500" height="400"></img>
-
-
 ## visitor
 
 [Visitor](https://github.com/JarkkoKarki/design-patterns/tree/master/src/main/java/visitor)
@@ -63,4 +58,5 @@
 ## adapter
 
 [Adapter](URL)
+
 
