@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="flyweight.controller.MapController" prefHeight="850.0" prefWidth="700.0">
+    <top>
+        <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <buttons>
+                <Button fx:id="b1" mnemonicParsing="false" onAction="#generateCityMap" text="City Map" />
+                <Button fx:id="b2" mnemonicParsing="false" onAction="#generateWildernessMap" text="Wilderness Map" />
+            </buttons>
+        </ButtonBar>
+    </top>
+    <center>
+        <VBox spacing="10" BorderPane.alignment="CENTER">
+            <!-- Canvas to draw the map -->
+            <Canvas fx:id="mapCanvas" width="400" height="400"/>
+            <TextArea fx:id="mapDisplay" editable="false" prefHeight="250.0" prefWidth="400.0" style="-fx-font-family: 'Courier New'; -fx-font-size: 14px;"/>
+        </VBox>
+    </center>
+    <bottom>
+        <Text text="Map Generator" BorderPane.alignment="CENTER">
+            <font>
+                <Font size="23.0"/>
+            </font>
+        </Text>
+    </bottom>
+</BorderPane>
